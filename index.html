@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="UTF-8"/>
+          <meta http-equiv="X-UA-Compatble"content="Ie=Edge">
+          <meta name="viewport" content="width=device-width, initail-scale=1.0">
+          <title>Google Form</title>
+          <link rel="Stylesheet" href="google.css">
+         
+     </head>
+     <body>
+          <style type="text/css">
+               body {
+                    background-color:rgb(230, 218, 218);
+                    border-radius: none;
+
+               }
+               h2 {
+                    color: blue;
+                    border-style: none;
+                    text-decoration: dashed;
+                    text-align: center;
+                    text-shadow: 3px 3px 5px rgb(16, 11, 174),-3px -3px 5px rgb(212, 198, 11);
+               }
+               .box {
+                    width: 400px;
+                    margin: 5px;
+                    padding: 30px;
+                    border-radius: 15px 15px 15px 15px;
+                    background-color: rgb(143, 169, 25);
+               }
+               #box-container {
+                    display:grid;
+
+               }
+               label-username input {
+                    background-color: blanchedalmond;
+                    border:solid;
+                    border-color: aqua;
+               }
+               button-submit input {
+                    background-color: rgb(209, 26, 26);
+               }
+          </style>
+          <div class="box">
+               <div class="logo">
+
+               </div>
+          <h2>sign In</h2>
+          <p>Use your Google Account</p>
+          
+          <form >
+             <div  class="inputBox">
+               <input type="email"  name = "email" required onkeyup="this.setAttribute('vlaue',this.value);"  value="  "><br><br>
+               <label>Username</label>
+            </div>
+              <div class="inputBox">
+               <input type="password" name = "password" required onkeyup="this.setAttribute('value',this.value);" value="  "> 
+               <label>Password</label>
+               
+               </div >   
+                  <input type="button" name="submit" value="submit ">     <br>
+                    <br>
+                    <input type="button" name="Sign up" value="Sign up ">   
+         
+          </form>   
+          </div>                                                                                                       
+     </body>
+</html>
