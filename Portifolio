@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marisetty Arunkumar | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1.5rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #00adb5;
+        }
+        .sections-container {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .section {
+            min-height: 100vh;
+            padding: 8rem 2rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #home {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://source.unsplash.com/random/1920x1080');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+        #about {
+            background: #f0f0f0;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        .profile-img {
+            width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        #skills {
+            background: #fff;
+        }
+        .skills-grid, .project-grid {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .project {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        #contact {
+            background: #f8f8f8;
+            padding: 3rem;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #00adb5;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-container">
+        <h2>Marisetty Arunkumar</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div class="sections-container">
+        <section class="section" id="home">
+            <h1>Marisetty Arunkumar</h1><br><br>
+            <br><br><p>Cybersecurity enthusiast passionate about securing digital assets and mitigating cyber threats.</p>
+            <a href="https://wispy-sunset-52.linkyhost.com" download>Download Resume</a>
+        </section>
+        <section class="section" id="about">
+            <img src="profile-placeholder.jpg" alt="Profile" class="profile-img">
+            <div>
+                <h2>About Me</h2>
+                <p>Motivated cybersecurity fresher with expertise in encryption, threat analysis, and risk assessment.</p>
+            </div>
+        </section>
+        <section class="section" id="skills">
+           <h2>Skills</h2>
+    
+           <br><br> <ul>
+                <br><li><br>Programming: Java, C, Python, HTML, CSS</li>
+                <br><li><br>Security: Encryption, Risk Assessment, Threat Modeling</li>
+                <br><li><br>Tools: GitHub, Linux, Windows</li>
+                <br><li><br>Databases: SQL</li>
+            <br><br></ul>
+        
+        </section>
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="Key project">
+                    <h2>A Secure Customer Loan Data Sharing in Financial Institutions using Hybrid 
+                        Cryptographic Mechanism</h2>
+                        <p>Designed a Hybrid Cryptographic Solution integrating AES and RSA encryption to 
+                        Enhance data security in financial institutions.
+                        <br>
+                        <br>Technologies Used: python, postgreSQL/MYSQL,Django,HTML,CSS
+                        K</h2>
+                    <br><h3>Encryption Using RSA Algorithm</h3>
+
+                    <br><p>Developed an encryption system using RSA to ensure data confidentiality and security.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
